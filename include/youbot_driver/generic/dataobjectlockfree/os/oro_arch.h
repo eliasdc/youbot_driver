@@ -4,7 +4,7 @@
 #  if defined(_MSC_VER)
 #   include "youbot_driver/generic/dataobjectlockfree/os/oro_msvc/oro_arch.h"
 #  elif defined(__GNUC__)
-#    if ( OROBLD_GCC_VERSION < 40100 || defined(__clang__) )
+#    if ( defined(__clang__) )
 #      if defined( OROBLD_OS_ARCH_i386 )
 #         include "youbot_driver/generic/dataobjectlockfree/os/oro_i386/oro_arch.h"
 #      elif defined( OROBLD_OS_ARCH_x86_64 )
